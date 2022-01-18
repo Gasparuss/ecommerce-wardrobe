@@ -1,6 +1,27 @@
 {
-  "extends": ["next", "next/core-web-vitals"],
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "extends": [
+    "prettier",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "next",
+    "next/core-web-vitals"
+  ],
+  "plugins": ["react", "prettier"],
+  "env": {
+    "es6": true,
+    "browser": true,
+    "jest": true,
+    "node": true
+  },
   "rules": {
-    "no-unused-vars": "error"
+    "no-unused-vars": "error",
+    "indent": ["error", 2]
   }
 }
