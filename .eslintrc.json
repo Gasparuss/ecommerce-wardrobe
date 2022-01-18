@@ -13,7 +13,7 @@
     "next",
     "next/core-web-vitals"
   ],
-  "plugins": ["react", "prettier"],
+  "plugins": ["react", "prettier", "@typescript-eslint"],
   "env": {
     "es6": true,
     "browser": true,
