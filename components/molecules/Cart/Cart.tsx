@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import { useState } from 'react';
+import { useCart } from '../../../context/CartContext';
 import { useWindowSize } from '../../../hooks';
+import { CartList } from '../List/CartList/CartList';
 
 import {
   StyledCartWrapper,
@@ -10,6 +12,7 @@ import {
 } from './Cart.styles';
 
 export const Cart = () => {
+  const { cartItems, getTotalQuantity } = useCart();
   const [isCartOpen, setIsCartOpen] = useState(false);
   const { width } = useWindowSize();
   return (
@@ -24,8 +27,15 @@ export const Cart = () => {
           height={width && width > 1100 ? '45' : '40'}
           alt="cart"
         />
-        <StyledCartProductsCount>COUNT</StyledCartProductsCount>
+        <StyledCartProductsCount>
+          {getTotalQuantity() > 99 ? '99' : getTotalQuantity()}
+        </StyledCartProductsCount>
       </StyledCartButton>
+      {isCartOpen ? (
+        <StyledCartListWrapper>
+          <CartList cartItems={cartItems} />
+        </StyledCartListWrapper>
+      ) : null}
     </StyledCartWrapper>
   );
 };

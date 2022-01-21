@@ -5,6 +5,7 @@ import {
   StyledBasketWrapper,
 } from './Header.styles';
 import { Cart } from '../Cart/Cart';
+import { StyledButton } from '../../atoms/Button/Button.styles';
 
 const Header = () => {
   return (
@@ -14,6 +15,7 @@ const Header = () => {
         <StyledBasketWrapper>
           <Cart />
         </StyledBasketWrapper>
+        <StyledButton>Logout</StyledButton>
       </StyledRightPannelWrapper>
     </StyledHeader>
   );
