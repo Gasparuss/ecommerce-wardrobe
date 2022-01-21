@@ -1,0 +1,55 @@
+html {
+  scroll-behavior: smooth;
+  font-size: clamp(62.5%, 0.326vw + 50.9%, 100%);
+}
+
+body {
+  width: 100%;
+  font-size: 1.6rem;
+  font-family: Montserrat, sans-serif;
+  overflow-x: hidden;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*::selection {
+  background-color: var(--pink-100);
+  color: var(--white-100);
+}
+
+a {
+  text-decoration: none;
+  color: var(--black-100);
+}
+
+.sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important; /* 1 */
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important; /* 2 */
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important; /* 3 */
+}
+
+.sr-only-focusable:focus,
+.sr-only-focusable:active {
+  clip: auto !important;
+  -webkit-clip-path: none !important;
+  clip-path: none !important;
+  height: auto !important;
+  margin: auto !important;
+  overflow: visible !important;
+  width: auto !important;
+  white-space: normal !important;
+}

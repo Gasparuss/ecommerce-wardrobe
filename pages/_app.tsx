@@ -1,18 +1,14 @@
-import { useState } from 'react';
+import '../styles/global.scss';
+import '../styles/variables.scss';
 import type { AppProps } from 'next/app';
-import { Hydrate, QueryClient, QueryClientProvider } from 'react-query';
-import { ReactQueryDevtools } from 'react-query/devtools';
-import 'tailwindcss/tailwind.css';
+
+const meta = {
+  title: 'Great Boots!',
+  description: 'This app is e-commerce project where you can buy your dream sofa.',
+};
+
+export const titleTemplate = `%s | ${meta.title}`;
 
 export default function MyApp({ Component, pageProps }: AppProps) {
-  const [queryClient] = useState(() => new QueryClient());
-
-  return (
-    <QueryClientProvider client={queryClient}>
-      <Hydrate state={pageProps.dehydratedState}>
-        <Component {...pageProps} />
-      </Hydrate>
-      <ReactQueryDevtools />
-    </QueryClientProvider>
-  );
+  return <Component {...pageProps} />;
 }
