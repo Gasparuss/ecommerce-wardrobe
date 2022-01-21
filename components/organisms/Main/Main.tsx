@@ -1,6 +1,6 @@
 import { memo } from 'react';
-import { Boots } from '../../types';
-import Header from '../header/Header';
+import { Sofa } from '../../../types';
+import Header from '../../molecules/Header/Header';
 import { StyledMainWrapper, StyledMainContent } from './Main.styles';
 
 // type MainProps = {

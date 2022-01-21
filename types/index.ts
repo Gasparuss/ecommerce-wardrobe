@@ -3,11 +3,11 @@ export type UserData = {
   password: string;
 };
 
-export type Boots = {
+export type Sofa = {
   id: string;
   name: string;
   description: string;
   cost: number;
-  shoeType: string;
+  sofaType: string;
   imgurl: string;
 };

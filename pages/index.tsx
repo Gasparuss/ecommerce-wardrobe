@@ -1,5 +1,5 @@
-import { Layout } from '../components/layout/Layout';
-import { Main } from '../components/main/Main';
+import { Layout } from '../components/organisms/Layout/Layout';
+import { Main } from '../components/organisms/Main/Main';
 
 const Home = () => {
   return (

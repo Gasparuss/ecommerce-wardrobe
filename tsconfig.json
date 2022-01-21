@@ -21,7 +21,8 @@
     "allowJs": true,
     "plugins": [],
     "baseUrl": ".",
-    "types": ["cypress"]
+    "types": ["cypress"],
+    "incremental": true
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "next.config.js"],
   "exclude": ["node_modules", "cypress"]
