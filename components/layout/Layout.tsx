@@ -18,7 +18,10 @@ export const Layout = memo<LayoutProps>(
             title: title ? titleTemplate.replace('%s', title) : titleTemplate.slice(4),
           }}
         />
+        {children}
       </>
     );
   },
 );
+
+Layout.displayName = 'Layout';

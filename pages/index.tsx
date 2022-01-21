@@ -1,7 +1,12 @@
 import { Layout } from '../components/layout/Layout';
+import { Main } from '../components/main/Main';
 
 const Home = () => {
-  return <Layout>yol</Layout>;
+  return (
+    <Layout>
+      <Main />
+    </Layout>
+  );
 };
 
 export default Home;

@@ -1,5 +1,6 @@
 import '../styles/global.scss';
 import '../styles/variables.scss';
+import { DefaultSeo } from 'next-seo';
 import type { AppProps } from 'next/app';
 
 const meta = {
@@ -10,5 +11,10 @@ const meta = {
 export const titleTemplate = `%s | ${meta.title}`;
 
 export default function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
+  return (
+    <>
+      <DefaultSeo title={meta.title} description={meta.description} />
+      <Component {...pageProps} />
+    </>
+  );
 }
