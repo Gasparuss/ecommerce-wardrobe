@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const StyledHomeSection = styled.section`
   display: grid;
@@ -31,10 +31,10 @@ export const StyledHomeSectionTitle = styled.h2`
     position: absolute;
     width: 60%;
     height: 80%;
-    content: '';
+    content: "";
     background-color: var(--yellow-500);
     z-index: -1;
     top: -15%;
-    left: 10%;
+    left: -10%;
   }
 `;
