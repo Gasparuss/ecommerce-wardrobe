@@ -51,7 +51,8 @@
     "prettier/prettier": 0,
     "react/no-unescaped-entities": 0,
     "no-redeclare": 0,
-    "no-useless-escape": 0
+    "no-useless-escape": 0,
+    "no-useless-catch": 0
   },
   "parserOptions": {
     "ecmaVersion": 12,

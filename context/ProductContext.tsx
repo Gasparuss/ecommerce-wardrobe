@@ -61,7 +61,7 @@ export const useProduct = () => {
   const context = useContext(ProductContext);
 
   if (!context) {
-    throw new Error("Error while reading product context!");
+    throw new Error("Error while reading context!");
   }
 
   return context;
@@ -106,6 +106,7 @@ export const ProductProvider = ({
           if (!selectedProductTypes.length) {
             return true;
           }
+
           if (selectedProductTypes.includes(product.sofaType)) {
             return true;
           }
@@ -116,7 +117,7 @@ export const ProductProvider = ({
   };
 
   const handleChangeSearchQuery = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setPrice(Number(e.target.value));
+    setSearchQuery(e.target.value);
   };
 
   const handleChangePrice = (e: React.ChangeEvent<HTMLInputElement>) => {

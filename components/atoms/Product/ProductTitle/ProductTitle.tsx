@@ -6,7 +6,7 @@ import {
   StyledProductTitle,
   StyledProductTitleFlashCard,
   StyledProductTitleFlashCardCost,
-} from "./ProductTItle.styles";
+} from "./ProductTitle.styles";
 
 type ProductProps = {
   readonly product: Sofa;
@@ -16,13 +16,16 @@ export const ProductTitle = memo<ProductProps>(({ product }) => {
   return (
     <Link href={`/products/${product.id}`} passHref>
       <StyledProductTitle data-testid="product-title">
-        <Image
-          src={product.imgurl}
-          width="100%"
-          height="100%"
-          layout="responsive"
-          alt={product.name}
-        />
+        {product.imgurl ? (
+          <Image
+            src={`${product.imgurl}`}
+            width="100%"
+            height="100%"
+            layout="responsive"
+            alt={product.name}
+          />
+        ) : null}
+
         <StyledProductTitleFlashCard>
           <StyledProductTitleFlashCardCost>
             ${product.cost}

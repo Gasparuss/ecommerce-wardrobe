@@ -1,12 +1,26 @@
-import { Layout } from '../components/organisms/Layout/Layout';
-import { Main } from '../components/organisms/Main/Main';
+import { GetStaticProps } from "next";
+import { Layout } from "../components/organisms/Layout/Layout";
+import { Main } from "../components/organisms/Main/Main";
+import { DatoCMSData } from "../lib/datocms";
+import type { Sofa } from "../types";
 
-const Home = () => {
+const Home = ({ results }: { results: Sofa[] }) => {
   return (
     <Layout>
-      <Main />
+      <Main results={results} />
     </Layout>
   );
 };
 
 export default Home;
+
+export const getStaticProps: GetStaticProps = async () => {
+  try {
+    const data = await DatoCMSData.items.all();
+    return { props: { results: data }, revalidate: 1 };
+  } catch {
+    return {
+      notFound: true as const,
+    };
+  }
+};
