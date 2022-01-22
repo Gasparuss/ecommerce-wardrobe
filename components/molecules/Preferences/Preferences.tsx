@@ -1,6 +1,6 @@
 import { useProduct } from "../../../context/ProductContext";
-import { SearchInput } from "../../atoms/SearchInput/SearchInput";
-import { SelectInput } from "../../atoms/SelectInput/SelectInput";
+import { SearchInput } from "../../atoms/Input/SearchInput/SearchInput";
+import { SelectInput } from "../../atoms/Input/SelectInput/SelectInput";
 import { StyledPreferencesWrapper } from "./Preferences.styles";
 
 export const Preferences = () => {
