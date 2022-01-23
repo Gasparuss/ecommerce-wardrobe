@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const StyledCartWrapper = styled.div`
   position: relative;
@@ -14,14 +14,13 @@ export const StyledCartButton = styled.button`
 
 export const StyledCartProductsCount = styled.span`
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 28%;
+  left: 55%;
   transform: translate(-50%, -30%);
   font-size: 1.5rem;
-  user-select: none;
 
   @media all and (min-width: 1000px) {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 `;
 

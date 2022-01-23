@@ -18,11 +18,6 @@ body {
   padding: 0;
 }
 
-*::selection {
-  background-color: var(--pink-100);
-  color: var(--white-100);
-}
-
 a {
   text-decoration: none;
   color: var(--black-100);

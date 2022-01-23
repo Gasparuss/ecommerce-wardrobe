@@ -18,9 +18,7 @@ export const ProductsList = memo<ProductsListProps>(({ products }) => {
           return <ProductTitle product={product} key={product.id} />;
         })
       ) : (
-        <StyledEmptyResults>
-          No products matches your search &#128530;
-        </StyledEmptyResults>
+        <StyledEmptyResults>Sorry, we can't load products</StyledEmptyResults>
       )}
     </StyledProductsListWrapper>
   );

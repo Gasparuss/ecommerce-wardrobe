@@ -17,7 +17,7 @@ export const StyledInput = styled(Select)`
 
   .Select__control--is-focused {
     border-color: var(--brown-600);
-    box-shadow: 0 0 0 1px var(--brown-700);
+    box-shadow: 0 0 0 1px var(--brown-600);
   }
   .Select__value-container {
     padding: 0.6rem 0.8rem;
@@ -25,7 +25,7 @@ export const StyledInput = styled(Select)`
   }
 
   .Select__option--is-focused {
-    background-color: var(--brown-500);
+    background-color: var(--brown-300);
   }
 
   .Select__multi-value {

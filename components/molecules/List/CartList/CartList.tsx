@@ -1,14 +1,14 @@
-import { memo } from 'react';
-import { Sofa } from '../../../../types';
-import { useCart } from '../../../../context/CartContext';
+import { memo } from "react";
+import { Sofa } from "../../../../types";
+import { useCart } from "../../../../context/CartContext";
 import {
   StyledCartList,
   StyledCartListWrapper,
   StyledEmptyCart,
-} from './CartList.styles';
-import { CartProduct } from '../../../atoms/Product/CartProduct/CartProduct';
-import Link from 'next/link';
-import { StyledButton } from '../../../atoms/Button/Button.styles';
+} from "./CartList.styles";
+import { CartProduct } from "../../../atoms/Product/CartProduct/CartProduct";
+import Link from "next/link";
+import { StyledButton } from "../../../atoms/Button/Button.styles";
 
 type CartListProps = {
   readonly cartItems: (Sofa & {
@@ -33,7 +33,7 @@ export const CartList = memo<CartListProps>(({ cartItems }) => {
             );
           })
         ) : (
-          <StyledEmptyCart>Cart is empty &#128531;</StyledEmptyCart>
+          <StyledEmptyCart>Cart is empty</StyledEmptyCart>
         )}
       </StyledCartList>
       <Link href="/checkout">
@@ -43,4 +43,4 @@ export const CartList = memo<CartListProps>(({ cartItems }) => {
   );
 });
 
-CartList.displayName = 'CartList';
+CartList.displayName = "CartList";
