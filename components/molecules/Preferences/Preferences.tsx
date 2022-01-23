@@ -23,10 +23,6 @@ export const Preferences = () => {
         onChange={handleChangeSearchQuery}
         placeholder="e. g. Kivik"
       />
-      <SelectInput
-        options={productsTypes.map((type) => ({ value: type, label: type }))}
-        onChange={handleSelectProductTypes}
-      />
       <RangeInput
         price={price}
         minPrice={minPrice}
