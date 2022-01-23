@@ -24,8 +24,8 @@ type ProductContext = {
   setSearchQuery: Dispatch<SetStateAction<string>>;
   productsTypes: string[];
   setProductsTypes: Dispatch<SetStateAction<string[]>>;
-  activeSofaColor: typeof wardrobeColors[number]["label"];
-  setActiveSofaColor: Dispatch<
+  activeWardrobeColor: typeof wardrobeColors[number]["label"];
+  setActiveWardrobeColor: Dispatch<
     SetStateAction<typeof wardrobeColors[number]["label"]>
   >;
   handleChangeSearchQuery: (e: React.ChangeEvent<HTMLInputElement>) => void;
@@ -50,8 +50,8 @@ const ProductContext = createContext<ProductContext>({
   setSearchQuery: () => {},
   productsTypes: [],
   setProductsTypes: () => {},
-  activeSofaColor: "yellow",
-  setActiveSofaColor: () => {},
+  activeWardrobeColor: "yellow",
+  setActiveWardrobeColor: () => {},
   handleChangeSearchQuery: () => {},
   handleChangePrice: () => {},
   handleSelectProductTypes: () => {},
@@ -82,7 +82,7 @@ export const ProductProvider = ({
   );
   const [searchQuery, setSearchQuery] = useState("");
   const [price, setPrice] = useState(350);
-  const [activeSofaColor, setActiveSofaColor] =
+  const [activeWardrobeColor, setActiveWardrobeColor] =
     useState<typeof wardrobeColors[number]["label"]>("yellow");
 
   const handleSelectProductTypes = (
@@ -150,8 +150,8 @@ export const ProductProvider = ({
         setSearchQuery,
         productsTypes,
         setProductsTypes,
-        activeSofaColor,
-        setActiveSofaColor,
+        activeWardrobeColor,
+        setActiveWardrobeColor,
         handleChangeSearchQuery,
         handleChangePrice,
         handleSelectProductTypes,
