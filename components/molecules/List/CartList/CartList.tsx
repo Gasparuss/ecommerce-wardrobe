@@ -1,5 +1,5 @@
 import { memo } from "react";
-import { Sofa } from "../../../../types";
+import { Wardrobe } from "../../../../types";
 import { useCart } from "../../../../context/CartContext";
 import {
   StyledCartList,
@@ -11,7 +11,7 @@ import Link from "next/link";
 import { StyledButton } from "../../../atoms/Button/Button.styles";
 
 type CartListProps = {
-  readonly cartItems: (Sofa & {
+  readonly cartItems: (Wardrobe & {
     quantity: number;
   })[];
 };

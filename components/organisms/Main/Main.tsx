@@ -1,6 +1,6 @@
 import { memo, useEffect } from "react";
 import { useProduct } from "../../../context/ProductContext";
-import { Sofa } from "../../../types";
+import { Wardrobe } from "../../../types";
 import Header from "../../molecules/Header/Header";
 import { HomeBanner } from "../../molecules/HomeBanner/HomeBanner";
 import { ProductsList } from "../../molecules/List/ProductsList/ProductsList";
@@ -8,7 +8,7 @@ import { Preferences } from "../../molecules/Preferences/Preferences";
 import { StyledMainWrapper, StyledMainContent } from "./Main.styles";
 
 type MainProps = {
-  readonly results: Sofa[];
+  readonly results: Wardrobe[];
 };
 
 export const Main = memo<MainProps>(({ results }) => {

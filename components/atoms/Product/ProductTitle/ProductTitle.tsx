@@ -1,5 +1,5 @@
 import { memo } from "react";
-import type { Sofa } from "../../../../types";
+import type { Wardrobe } from "../../../../types";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -9,7 +9,7 @@ import {
 } from "./ProductTitle.styles";
 
 type ProductProps = {
-  readonly product: Sofa;
+  readonly product: Wardrobe;
 };
 
 export const ProductTitle = memo<ProductProps>(({ product }) => {

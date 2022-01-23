@@ -25,7 +25,7 @@ export const StyledInput = styled(Select)`
   }
 
   .Select__option--is-focused {
-    background-color: var(--brown-300);
+    background-color: var(--brown-500);
   }
 
   .Select__multi-value {

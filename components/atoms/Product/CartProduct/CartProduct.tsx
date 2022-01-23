@@ -1,17 +1,17 @@
-import { memo } from 'react';
-import { Sofa } from '../../../../types';
-import Image from 'next/image';
+import { memo } from "react";
+import { Wardrobe } from "../../../../types";
+import Image from "next/image";
 import {
   StyledCartListItem,
   StyledItemCost,
   StyledItemDescription,
   StyledItemName,
   StyledRemoveItemButton,
-} from './CartProduct.styles';
+} from "./CartProduct.styles";
 
 type CartProductProps = {
-  readonly product: Sofa & { quantity: number };
-  readonly onRemoveItem: (product: Sofa & { quantity: number }) => void;
+  readonly product: Wardrobe & { quantity: number };
+  readonly onRemoveItem: (product: Wardrobe & { quantity: number }) => void;
 };
 
 export const CartProduct = memo<CartProductProps>(

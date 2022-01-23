@@ -1,18 +1,18 @@
-import { createContext, useContext, useState } from 'react';
-import type { Sofa } from '../types';
+import { createContext, useContext, useState } from "react";
+import type { Wardrobe } from "../types";
 import {
   addProductToCart,
   calculateTotalCartItemsCost,
   calculateTotalCartItemsQuantity,
   changeProductQuantity,
   removeProductFromCart,
-} from '../utils/functions';
+} from "../utils/functions";
 
 type CartContext = {
-  cartItems: (Sofa & { quantity: number })[];
-  handleAddToCart: (product: Sofa) => void;
-  handleRemoveFromCart: (product: Sofa) => void;
-  handleChangeProductQuantity: (product: Sofa, quantity: number) => void;
+  cartItems: (Wardrobe & { quantity: number })[];
+  handleAddToCart: (product: Wardrobe) => void;
+  handleRemoveFromCart: (product: Wardrobe) => void;
+  handleChangeProductQuantity: (product: Wardrobe, quantity: number) => void;
   getTotalCost: () => number;
   getTotalQuantity: () => number;
 };
@@ -30,26 +30,26 @@ export const useCart = () => {
   const context = useContext(CartContext);
 
   if (!context) {
-    throw new Error('Error while reading cart context!');
+    throw new Error("Error while reading cart context!");
   }
 
   return context;
 };
 
 export const CartProvider = ({ children }: { children: React.ReactNode }) => {
-  const [cartItems, setCartItems] = useState<(Sofa & { quantity: number })[]>(
-    [],
-  );
+  const [cartItems, setCartItems] = useState<
+    (Wardrobe & { quantity: number })[]
+  >([]);
 
-  const handleAddToCart = (product: Sofa) => {
+  const handleAddToCart = (product: Wardrobe) => {
     setCartItems((cartItems) => addProductToCart(cartItems, product));
   };
 
-  const handleRemoveFromCart = (product: Sofa) => {
+  const handleRemoveFromCart = (product: Wardrobe) => {
     setCartItems((cartItems) => removeProductFromCart(cartItems, product));
   };
 
-  const handleChangeProductQuantity = (product: Sofa, quantity: number) => {
+  const handleChangeProductQuantity = (product: Wardrobe, quantity: number) => {
     setCartItems((cartItems) =>
       changeProductQuantity(cartItems, product, quantity),
     );

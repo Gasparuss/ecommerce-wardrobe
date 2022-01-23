@@ -2,9 +2,9 @@ import { GetStaticProps } from "next";
 import { Layout } from "../components/organisms/Layout/Layout";
 import { Main } from "../components/organisms/Main/Main";
 import { DatoCMSData } from "../lib/datocms";
-import type { Sofa } from "../types";
+import type { Wardrobe } from "../types";
 
-const Home = ({ results }: { results: Sofa[] }) => {
+const Home = ({ results }: { results: Wardrobe[] }) => {
   return (
     <Layout>
       <Main results={results} />

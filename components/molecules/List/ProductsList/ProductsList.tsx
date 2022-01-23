@@ -1,5 +1,5 @@
 import { ProductTitle } from "../../../atoms/Product/ProductTitle/ProductTitle";
-import type { Sofa } from "../../../../types";
+import type { Wardrobe } from "../../../../types";
 import { memo } from "react";
 import {
   StyledEmptyResults,
@@ -7,7 +7,7 @@ import {
 } from "./ProductsList.styles";
 
 type ProductsListProps = {
-  readonly products: Sofa[];
+  readonly products: Wardrobe[];
 };
 
 export const ProductsList = memo<ProductsListProps>(({ products }) => {

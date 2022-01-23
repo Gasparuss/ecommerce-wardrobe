@@ -6,27 +6,27 @@ import React, {
   useContext,
   useEffect,
 } from "react";
-import { sofaColors } from "../utils/consts";
-import type { Sofa } from "../types/index";
+import { wardrobeColors } from "../utils/consts";
+import type { Wardrobe } from "../types/index";
 
 type ProductContext = {
-  products: Sofa[];
-  setProducts: Dispatch<SetStateAction<Sofa[]>>;
+  products: Wardrobe[];
+  setProducts: Dispatch<SetStateAction<Wardrobe[]>>;
   minPrice: number;
   setMinPrice: Dispatch<SetStateAction<number>>;
   maxPrice: number;
   setMaxPrice: Dispatch<SetStateAction<number>>;
   price: number;
   setPrice: Dispatch<SetStateAction<number>>;
-  filteredProducts: Sofa[];
-  setFilteredProducts: Dispatch<SetStateAction<Sofa[]>>;
+  filteredProducts: Wardrobe[];
+  setFilteredProducts: Dispatch<SetStateAction<Wardrobe[]>>;
   searchQuery: string;
   setSearchQuery: Dispatch<SetStateAction<string>>;
   productsTypes: string[];
   setProductsTypes: Dispatch<SetStateAction<string[]>>;
-  activeSofaColor: typeof sofaColors[number]["label"];
+  activeSofaColor: typeof wardrobeColors[number]["label"];
   setActiveSofaColor: Dispatch<
-    SetStateAction<typeof sofaColors[number]["label"]>
+    SetStateAction<typeof wardrobeColors[number]["label"]>
   >;
   handleChangeSearchQuery: (e: React.ChangeEvent<HTMLInputElement>) => void;
   handleChangePrice: (e: React.ChangeEvent<HTMLInputElement>) => void;
@@ -72,8 +72,8 @@ export const ProductProvider = ({
 }: {
   children: React.ReactNode;
 }) => {
-  const [products, setProducts] = useState<Sofa[]>([]);
-  const [filteredProducts, setFilteredProducts] = useState<Sofa[]>([]);
+  const [products, setProducts] = useState<Wardrobe[]>([]);
+  const [filteredProducts, setFilteredProducts] = useState<Wardrobe[]>([]);
   const [minPrice, setMinPrice] = useState(0);
   const [maxPrice, setMaxPrice] = useState(2000);
   const [productsTypes, setProductsTypes] = useState<string[]>([]);
@@ -83,7 +83,7 @@ export const ProductProvider = ({
   const [searchQuery, setSearchQuery] = useState("");
   const [price, setPrice] = useState(350);
   const [activeSofaColor, setActiveSofaColor] =
-    useState<typeof sofaColors[number]["label"]>("yellow");
+    useState<typeof wardrobeColors[number]["label"]>("yellow");
 
   const handleSelectProductTypes = (
     types: { value: string; label: string }[],

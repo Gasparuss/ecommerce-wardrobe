@@ -28,7 +28,7 @@ export const inputValidation = {
   },
 };
 
-export const sofaColors = [
+export const wardrobeColors = [
   {
     label: "yellow" as const,
     palette: {

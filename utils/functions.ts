@@ -1,8 +1,8 @@
-import type { Sofa } from '../types/index';
+import type { Wardrobe } from "../types/index";
 
 export const addProductToCart = (
-  cartItems: (Sofa & { quantity: number })[],
-  productToAdd: Sofa,
+  cartItems: (Wardrobe & { quantity: number })[],
+  productToAdd: Wardrobe,
 ) => {
   if (cartItems.reduce((acc, { quantity }) => acc + quantity, 0) === 99) {
     return cartItems;
@@ -21,8 +21,8 @@ export const addProductToCart = (
 };
 
 export const removeProductFromCart = (
-  cartItems: (Sofa & { quantity: number })[],
-  productToRemove: Sofa,
+  cartItems: (Wardrobe & { quantity: number })[],
+  productToRemove: Wardrobe,
 ) => {
   const isProductInCart = cartItems.find(({ id }) => id === productToRemove.id);
 
@@ -38,8 +38,8 @@ export const removeProductFromCart = (
 };
 
 export const changeProductQuantity = (
-  cartItems: (Sofa & { quantity: number })[],
-  product: Sofa,
+  cartItems: (Wardrobe & { quantity: number })[],
+  product: Wardrobe,
   quantity: number,
 ) => {
   const availableQuantity = quantity > 99 ? 99 : quantity;
@@ -52,7 +52,7 @@ export const changeProductQuantity = (
 };
 
 export const calculateTotalCartItemsCost = (
-  cartItems: (Sofa & { quantity: number })[],
+  cartItems: (Wardrobe & { quantity: number })[],
 ) => {
   return cartItems.reduce(
     (acc, { quantity, cost }) => acc + quantity * cost,
@@ -61,7 +61,7 @@ export const calculateTotalCartItemsCost = (
 };
 
 export const calculateTotalCartItemsQuantity = (
-  cartItems: (Sofa & { quantity: number })[],
+  cartItems: (Wardrobe & { quantity: number })[],
 ) => {
   return cartItems.reduce((total, { quantity }) => total + quantity, 0);
 };

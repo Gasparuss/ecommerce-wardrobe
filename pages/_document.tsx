@@ -19,7 +19,10 @@ class MyDocument extends Document {
           <meta name="msapplication-TileColor" content="#fce61d" />
           <meta name="theme-color" content="#fce61d" />
           <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
-          <meta name="apple-mobile-web-app-title" content="Furniture? Sofa!" />
+          <meta
+            name="apple-mobile-web-app-title"
+            content="Furniture? Wardrobe!"
+          />
           <script
             dangerouslySetInnerHTML={{
               __html: `

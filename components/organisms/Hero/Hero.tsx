@@ -1,4 +1,4 @@
-import { sofaColors } from "../../../utils/consts";
+import { wardrobeColors } from "../../../utils/consts";
 import { useProduct } from "../../../context/ProductContext";
 import Image from "next/image";
 import { HeroLink } from "../../atoms/HeroLink/HeroLink";

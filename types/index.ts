@@ -3,7 +3,7 @@ export type UserData = {
   password: string;
 };
 
-export type Sofa = {
+export type Wardrobe = {
   id: string;
   name: string;
   description: string;

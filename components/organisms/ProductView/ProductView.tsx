@@ -1,1 +1,1 @@
-import type { Sofa } from "../../../types";
+import type { Wardrobe } from "../../../types";

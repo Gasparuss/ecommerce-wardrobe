@@ -6,6 +6,11 @@ export const StyledProductTitle = styled.a`
   flex: 0 1 30rem;
   margin: 2rem;
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 `;
 
 export const StyledProductTitleFlashCard = styled.h3`
