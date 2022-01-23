@@ -25,7 +25,7 @@ export const StyledInput = styled.input`
     height: 20px;
     width: 20px;
     border-radius: 50%;
-    background-color: var(--yellow-600);
+    background-color: var(--brown-600);
     position: relative;
     cursor: pointer;
     margin-top: -6.5px;
@@ -37,7 +37,7 @@ export const StyledInput = styled.input`
     height: 20px;
     width: 20px;
     border-radius: 50%;
-    background-color: var(--yellow-600);
+    background-color: var(--brown-600);
     position: relative;
     cursor: pointer;
     margin-top: -6.5px;
@@ -49,7 +49,7 @@ export const StyledInput = styled.input`
     height: 20px;
     width: 20px;
     border-radius: 50%;
-    background-color: var(--yellow-600);
+    background-color: var(--brown-600);
     position: relative;
     cursor: pointer;
     margin-top: -6.5px;

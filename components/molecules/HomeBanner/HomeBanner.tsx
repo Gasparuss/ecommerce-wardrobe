@@ -1,13 +1,13 @@
-import Image from 'next/image';
-import { StyledHomeSection, StyledHomeSectionTitle } from './HomeBanner.styles';
+import Image from "next/image";
+import { StyledHomeSection, StyledHomeSectionTitle } from "./HomeBanner.styles";
 
 export const HomeBanner = () => {
   return (
     <StyledHomeSection>
       <StyledHomeSectionTitle>
-        Welcome to the world of convenience!
+        Only with us the quality of the product
       </StyledHomeSectionTitle>
-      <Image src="/svg/sofa.svg" width="450" height="450" alt="sofa" />
+      <Image src="/svg/wardrobe.svg" width="350" height="350" alt="wardrobe" />
     </StyledHomeSection>
   );
 };

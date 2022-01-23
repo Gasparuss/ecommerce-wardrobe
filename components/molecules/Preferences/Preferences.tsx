@@ -21,7 +21,11 @@ export const Preferences = () => {
       <SearchInput
         value={searchQuery}
         onChange={handleChangeSearchQuery}
-        placeholder="e. g. Kivik"
+        placeholder="Your wardrobe..."
+      />
+      <SelectInput
+        options={productsTypes.map((type) => ({ value: type, label: type }))}
+        onChange={handleSelectProductTypes}
       />
       <RangeInput
         price={price}

@@ -24,7 +24,7 @@ export const StyledInput = styled.input`
   appearance: none;
 
   &:focus {
-    box-shadow: 0 0 0 1.5px var(--yellow-600);
+    box-shadow: 0 0 0 1.5px var(--brown-600);
   }
 
   ::placeholder {

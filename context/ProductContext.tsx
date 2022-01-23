@@ -107,7 +107,7 @@ export const ProductProvider = ({
             return true;
           }
 
-          if (selectedProductTypes.includes(product.sofaType)) {
+          if (selectedProductTypes.includes(product.wardrobetype)) {
             return true;
           }
 
@@ -128,7 +128,9 @@ export const ProductProvider = ({
     setMinPrice(Math.min(...products.map((product) => product.cost)));
     setMaxPrice(Math.max(...products.map((product) => product.cost)));
     setPrice(Math.max(...products.map((product) => product.cost)));
-    setProductsTypes([...new Set(products.map((product) => product.sofaType))]);
+    setProductsTypes([
+      ...new Set(products.map((product) => product.wardrobetype)),
+    ]);
   }, [products]);
 
   return (

@@ -8,6 +8,6 @@ export type Sofa = {
   name: string;
   description: string;
   cost: number;
-  sofaType: string;
+  wardrobetype: string;
   imgurl: string;
 };
