@@ -1,4 +1,5 @@
 import { GetStaticProps } from "next";
+import { AuthChecker } from "../components/organisms/AuthChecker/AuthChecker";
 import { Layout } from "../components/organisms/Layout/Layout";
 import { Main } from "../components/organisms/Main/Main";
 import { DatoCMSData } from "../lib/datocms";
@@ -6,9 +7,11 @@ import type { Wardrobe } from "../types";
 
 const Home = ({ results }: { results: Wardrobe[] }) => {
   return (
-    <Layout>
-      <Main results={results} />
-    </Layout>
+    <AuthChecker>
+      <Layout>
+        <Main results={results} />
+      </Layout>
+    </AuthChecker>
   );
 };
 
