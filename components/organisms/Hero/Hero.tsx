@@ -66,12 +66,7 @@ export const Hero = memo<HeroProps>(({ isHome = true }) => {
         </StyledHeroHeader>
       )}
       <StyledHeroImage>
-        <svg
-          version="1.1"
-          id="Capa_1"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 58 58"
-        >
+        <svg id="Capa_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 58 58">
           <polygon
             fill={"#" + selectedPalette.main}
             points="55,0 3,0 3,4 5,4 5,6 53,6 53,4 55,4 "

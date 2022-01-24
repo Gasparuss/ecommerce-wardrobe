@@ -18,7 +18,7 @@ export const ColorSelect = memo<ColorSelectProps>(({ name, onChange }) => {
 
   useEffect(() => {
     return () => {
-      setActiveWardrobeColor("yellow");
+      setActiveWardrobeColor("brown");
     };
   }, []);
   return (
