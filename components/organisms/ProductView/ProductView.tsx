@@ -11,7 +11,10 @@ type ProductViewProps = {
 export const ProductView = memo<ProductViewProps>(({ product }) => {
   return (
     <StyledProductViewWrapper>
+      <Hero isHome={false} />
       <ProductDescription product={product} />
     </StyledProductViewWrapper>
   );
 });
+
+ProductView.displayName = "ProductView";

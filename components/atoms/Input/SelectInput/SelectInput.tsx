@@ -12,7 +12,7 @@ type SelectInputProps = {
 };
 
 export const SelectInput = memo<SelectInputProps>(
-  ({ options, name = "types", onChange }) => {
+  ({ options, name = "types", onChange }: any) => {
     return (
       <StyledInputWrapper>
         <StyledLabel htmlFor="select">Select type</StyledLabel>
