@@ -1,7 +1,7 @@
 import { wardrobeColors } from "../../../utils/consts";
 import { useProduct } from "../../../context/ProductContext";
 import Image from "next/image";
-import { HeroLink } from "../../atoms/HeroLink/HeroLink";
+import { HeroLink } from "../../atoms/Link/HeroLink/HeroLink";
 import { Cart } from "../../molecules/Cart/Cart";
 import { memo, useState, useEffect } from "react";
 import { StyledButton } from "../../atoms/Button/Button.styles";

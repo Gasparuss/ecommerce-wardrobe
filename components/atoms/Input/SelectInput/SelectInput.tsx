@@ -22,6 +22,7 @@ export const SelectInput = memo<SelectInputProps>(
           name={name}
           classNamePrefix={"Select"}
           id="select"
+          instanceId="select"
           isClearable={false}
           onChange={onChange}
         />
