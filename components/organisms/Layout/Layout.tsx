@@ -2,6 +2,7 @@ import { memo } from "react";
 import { NextSeo } from "next-seo";
 import { titleTemplate as defaultTitleTemplate } from "../../../pages/_app";
 import { Loader } from "../Loader/Loader";
+import { Modal } from "../../atoms/Modal/Modal";
 
 type LayoutProps = {
   readonly children: React.ReactNode;
@@ -24,6 +25,7 @@ export const Layout = memo<LayoutProps>(
           }}
         />
         <Loader />
+        <Modal />
         {children}
       </>
     );
