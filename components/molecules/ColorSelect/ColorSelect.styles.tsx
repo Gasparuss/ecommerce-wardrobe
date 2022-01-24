@@ -16,6 +16,7 @@ export const StyledInputLabel = styled.label<{ isActive: boolean }>`
   cursor: pointer;
   user-select: none;
   padding: 0.2rem;
+  text-align: center;
   border-width: 5px;
   border-color: var(--gray-100);
   border-style: ${(props) => (props.isActive ? "solid" : "dashed")};

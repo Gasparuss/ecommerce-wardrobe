@@ -3,12 +3,15 @@ import { Layout } from "../../components/organisms/Layout/Layout";
 import { ProductView } from "../../components/organisms/ProductView/ProductView";
 import { GetStaticProps, GetStaticPaths } from "next";
 import { DatoCMSData } from "../../lib/datocms";
+import { AuthChecker } from "../../components/organisms/AuthChecker/AuthChecker";
 
 const Product = ({ product }: { product: Wardrobe }) => {
   return (
-    <Layout>
-      <ProductView product={product} />
-    </Layout>
+    <AuthChecker>
+      <Layout>
+        <ProductView product={product} />
+      </Layout>
+    </AuthChecker>
   );
 };
 

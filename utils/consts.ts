@@ -54,7 +54,7 @@ export const wardrobeColors = [
     },
   },
   {
-    label: "whitesmoke" as const,
+    label: "smoke" as const,
     palette: {
       main: "F5F5F5",
       secondary: "FEFCFC",
