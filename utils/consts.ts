@@ -30,43 +30,35 @@ export const inputValidation = {
 
 export const wardrobeColors = [
   {
-    label: "yellow" as const,
+    label: "brown" as const,
     palette: {
-      main: "fac623",
-      leftPillow: "eda600",
-      rightPillow: "f6bb00",
-      backrest: "de9400",
-      dots: "cf8300",
+      main: "774836",
+      secondary: "8F5741",
+      handle: "C4A451",
     },
   },
   {
-    label: "red" as const,
+    label: "black" as const,
     palette: {
-      main: "e5383b",
-      leftPillow: "ba181b",
-      rightPillow: "e74a4d",
-      backrest: "eb3134",
-      dots: "a4161a",
+      main: "000",
+      secondary: "1E1E1E",
+      handle: "C4A451",
     },
   },
   {
-    label: "green" as const,
+    label: "gray" as const,
     palette: {
-      main: "80b918",
-      leftPillow: "2b9348",
-      rightPillow: "aacc00",
-      backrest: "55a630",
-      dots: "0a6c2d",
+      main: "808080",
+      secondary: "B2B1B1",
+      handle: "000",
     },
   },
   {
-    label: "blue" as const,
+    label: "smoke" as const,
     palette: {
-      main: "219ebc",
-      leftPillow: "126782",
-      rightPillow: "8ecae6",
-      backrest: "0096c7",
-      dots: "0a4c65",
+      main: "F5F5F5",
+      secondary: "FEFCFC",
+      handle: "000",
     },
   },
 ];

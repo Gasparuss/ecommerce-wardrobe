@@ -8,7 +8,7 @@ export const StyledButton = styled.button`
   font-size: 1.3rem;
   padding: 1rem 2.5rem;
   margin: 2rem 0;
-  background-color: var(--brown-700);
+  background-color: var(--brown-600);
   font-family: inherit;
   text-transform: uppercase;
 

@@ -50,7 +50,7 @@ const ProductContext = createContext<ProductContext>({
   setSearchQuery: () => {},
   productsTypes: [],
   setProductsTypes: () => {},
-  activeWardrobeColor: "yellow",
+  activeWardrobeColor: "brown",
   setActiveWardrobeColor: () => {},
   handleChangeSearchQuery: () => {},
   handleChangePrice: () => {},
@@ -83,7 +83,7 @@ export const ProductProvider = ({
   const [searchQuery, setSearchQuery] = useState("");
   const [price, setPrice] = useState(350);
   const [activeWardrobeColor, setActiveWardrobeColor] =
-    useState<typeof wardrobeColors[number]["label"]>("yellow");
+    useState<typeof wardrobeColors[number]["label"]>("brown");
 
   const handleSelectProductTypes = (
     types: { value: string; label: string }[],

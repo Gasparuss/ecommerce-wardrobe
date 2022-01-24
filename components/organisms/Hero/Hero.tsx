@@ -67,37 +67,143 @@ export const Hero = memo<HeroProps>(({ isHome = true }) => {
       )}
       <StyledHeroImage>
         <svg
-          id="flat"
-          height="450"
-          viewBox="0 0 512 512"
-          width="450"
+          version="1.1"
+          id="Capa_1"
           xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 58 58"
         >
-          <path
-            d="m80 288v-128a32 32 0 0 1 32-32h288a32 32 0 0 1 32 32v128z"
-            fill={"#" + selectedPalette.backrest}
-          />
-          <path
-            d="m424.47389 336a32 32 0 0 0 30.54336-22.4552l31.726-101.52319a27.6089 27.6089 0 0 0 1.25675-8.23501v-.1778a27.6088 27.6088 0 0 0 -27.6088-27.6088 27.6088 27.6088 0 0 0 -26.38791 19.48944l-26.00329 84.51056h-304l-26.00325-84.51056a27.6088 27.6088 0 0 0 -26.38791-19.48944 27.6088 27.6088 0 0 0 -27.60884 27.6088v.1778a27.6089 27.6089 0 0 0 1.25675 8.235l31.726 101.52319a32 32 0 0 0 30.54336 22.45521z"
+          <polygon
             fill={"#" + selectedPalette.main}
+            points="55,0 3,0 3,4 5,4 5,6 53,6 53,4 55,4 "
+          />
+
+          <rect x="3" fill={"#" + selectedPalette.main} width="52" height="4" />
+          <rect
+            x="8"
+            y="6"
+            fill={"#" + selectedPalette.main}
+            width="42"
+            height="46"
+          />
+          <rect
+            x="28"
+            y="6"
+            fill={"#" + selectedPalette.secondary}
+            width="2"
+            height="46"
+          />
+          <rect
+            x="11"
+            y="39"
+            fill={"#" + selectedPalette.secondary}
+            width="15"
+            height="10"
+          />
+          <rect
+            x="32"
+            y="39"
+            fill={"#" + selectedPalette.secondary}
+            width="15"
+            height="10"
+          />
+          <rect
+            x="11"
+            y="9"
+            fill={"#" + selectedPalette.secondary}
+            width="6"
+            height="6"
+          />
+          <rect
+            x="20"
+            y="9"
+            fill={"#" + selectedPalette.secondary}
+            width="6"
+            height="6"
+          />
+          <rect
+            x="11"
+            y="18"
+            fill={"#" + selectedPalette.secondary}
+            width="6"
+            height="6"
+          />
+          <rect
+            x="20"
+            y="18"
+            fill={"#" + selectedPalette.secondary}
+            width="6"
+            height="6"
+          />
+          <rect
+            x="11"
+            y="27"
+            fill={"#" + selectedPalette.secondary}
+            width="6"
+            height="6"
+          />
+          <rect
+            x="20"
+            y="27"
+            fill={"#" + selectedPalette.secondary}
+            width="6"
+            height="6"
+          />
+          <rect
+            x="32"
+            y="9"
+            fill={"#" + selectedPalette.secondary}
+            width="6"
+            height="6"
+          />
+          <rect
+            x="41"
+            y="9"
+            fill={"#" + selectedPalette.secondary}
+            width="6"
+            height="6"
+          />
+          <rect
+            x="32"
+            y="18"
+            fill={"#" + selectedPalette.secondary}
+            width="6"
+            height="6"
+          />
+          <rect
+            x="41"
+            y="18"
+            fill={"#" + selectedPalette.secondary}
+            width="6"
+            height="6"
+          />
+          <rect
+            x="32"
+            y="27"
+            fill={"#" + selectedPalette.secondary}
+            width="6"
+            height="6"
+          />
+          <rect
+            x="41"
+            y="27"
+            fill={"#" + selectedPalette.secondary}
+            width="6"
+            height="6"
+          />
+
+          <path
+            fill={"#" + selectedPalette.handle}
+            d="M26,37h-2c-0.552,0-1-0.447-1-1s0.448-1,1-1h2c0.552,0,1,0.447,1,1S26.552,37,26,37z"
           />
           <path
-            d="m128 240h104a24 24 0 0 1 24 24v16a0 0 0 0 1 0 0h-152a0 0 0 0 1 0 0v-16a24 24 0 0 1 24-24z"
-            fill={"#" + selectedPalette.leftPillow}
+            fill={"#" + selectedPalette.handle}
+            d="M34,37h-2c-0.552,0-1-0.447-1-1s0.448-1,1-1h2c0.552,0,1,0.447,1,1S34.552,37,34,37z"
           />
-          <path
-            d="m280 240h104a24 24 0 0 1 24 24v16a0 0 0 0 1 0 0h-152a0 0 0 0 1 0 0v-16a24 24 0 0 1 24-24z"
-            fill={"#" + selectedPalette.rightPillow}
+
+          <polygon
+            fill={"#" + selectedPalette.main}
+            points="47,52 11,52 8,52 5,52 5,58 11,58 11,56 47,56 47,58 53,58 53,56 53,52 "
           />
-          <g fill={"#" + selectedPalette.dots}>
-            <path d="m136 176h16v16h-16z" />
-            <path d="m192 176h16v16h-16z" />
-            <path d="m248 176h16v16h-16z" />
-            <path d="m304 176h16v16h-16z" />
-            <path d="m360 176h16v16h-16z" />
-          </g>
-          <path d="m96 336-8 48h16l32-48z" fill="#b1712c" />
-          <path d="m416 336 8 48h-16l-32-48z" fill="#b1712c" />
         </svg>
       </StyledHeroImage>
     </StyledHeroWrapper>

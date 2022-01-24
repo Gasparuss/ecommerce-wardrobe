@@ -32,7 +32,7 @@ export const StyledHomeSectionTitle = styled.h2`
     width: 60%;
     height: 80%;
     content: "";
-    background-color: var(--brown-700);
+    background-color: var(--brown-600);
     z-index: -1;
     top: -15%;
     left: -10%;

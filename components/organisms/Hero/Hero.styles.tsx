@@ -11,7 +11,7 @@ export const StyledHeroWrapper = styled.section<HeroProps>`
   justify-content: ${(props) => (props.isHome ? "space-around" : "center")};
   align-items: center;
   flex-direction: column;
-  background-color: var(--brown-600);
+  background-color: var(--brown-500);
   padding: 2.4rem 2.5rem 12rem;
   position: relative;
   padding-bottom: ${(props) => (props.isHome ? "12rem" : "4rem")};
