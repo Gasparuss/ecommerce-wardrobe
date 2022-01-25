@@ -17,6 +17,8 @@
   "dependencies": {
     "datocms-client": "^3.5.14",
     "firebase": "^8.6.0",
+    "graphql": "^16.2.0",
+    "graphql-request": "^3.7.0",
     "next": "12.0.8",
     "next-seo": "^4.29.0",
     "react": "17.0.2",
