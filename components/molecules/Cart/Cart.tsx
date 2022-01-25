@@ -1,15 +1,15 @@
-import Image from 'next/image';
-import { useState } from 'react';
-import { useCart } from '../../../context/CartContext';
-import { useWindowSize } from '../../../hooks';
-import { CartList } from '../List/CartList/CartList';
+import Image from "next/image";
+import { useState } from "react";
+import { useCart } from "../../../context/CartContext";
+import { useWindowSize } from "../../../hooks";
+import { CartList } from "../List/CartList/CartList";
 
 import {
   StyledCartWrapper,
   StyledCartButton,
   StyledCartProductsCount,
   StyledCartListWrapper,
-} from './Cart.styles';
+} from "./Cart.styles";
 
 export const Cart = () => {
   const { cartItems, getTotalQuantity } = useCart();
@@ -23,12 +23,12 @@ export const Cart = () => {
       >
         <Image
           src="/svg/cart.svg"
-          width={width && width > 1100 ? '45' : '40'}
-          height={width && width > 1100 ? '45' : '40'}
+          width={width && width > 1100 ? "45" : "40"}
+          height={width && width > 1100 ? "45" : "40"}
           alt="cart"
         />
         <StyledCartProductsCount>
-          {getTotalQuantity() > 99 ? '99' : getTotalQuantity()}
+          {getTotalQuantity() > 99 ? "99" : getTotalQuantity()}
         </StyledCartProductsCount>
       </StyledCartButton>
       {isCartOpen ? (
