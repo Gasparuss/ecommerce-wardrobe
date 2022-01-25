@@ -10,22 +10,13 @@ const Home = ({ results }: { results: Wardrobe[] }) => {
   console.log(results);
 
   return (
-    <Layout>
-      <Main results={results} />
-    </Layout>
+    <AuthChecker>
+      <Layout>
+        <Main results={results} />
+      </Layout>
+    </AuthChecker>
   );
 };
-
-const query = gql`
-  query {
-    product {
-      id
-      name
-      cost
-      description
-    }
-  }
-`;
 
 export default Home;
 
