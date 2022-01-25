@@ -42,7 +42,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
       paths: results.map(({ id }) => ({
         params: { id },
       })),
-      fallback: "blocking" as const,
+      fallback: false,
     };
   } catch (err) {
     throw err;
