@@ -37,7 +37,7 @@ export const RegisterForm = () => {
         message: "Account was creater, Log in!",
       });
       reset();
-    } catch (e) {
+    } catch (e: any) {
       setModal({ isOpen: true, type: "error", message: e?.message });
     } finally {
       setLoading(false);
