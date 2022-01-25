@@ -45,6 +45,9 @@ If you have any issues, please let me know in the issues section or directly to 
 ```bash
 git clone https://github.com/Gasparuss/ecommerce-wardrobe
 yarn
+
+Fill your .env variables
+
 yarn dev
 ```
 
