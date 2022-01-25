@@ -33,7 +33,7 @@ export const LoginForm = () => {
   const router = useRouter();
   const { setLoading, setModal } = useMainContext();
 
-  const handleLogin = async ({ email, password }: UserData) => {
+  const handleLogin = async ({ email, password }: UserData | any) => {
     setLoading(true);
     try {
       await auth.signInWithEmailAndPassword(email, password);

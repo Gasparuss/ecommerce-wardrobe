@@ -27,7 +27,7 @@ export const RegisterForm = () => {
 
   const { setLoading, setModal } = useMainContext();
 
-  const handleRegister = async ({ email, password }: UserData) => {
+  const handleRegister = async ({ email, password }: UserData | any) => {
     setLoading(true);
     try {
       await auth.createUserWithEmailAndPassword(email, password);
