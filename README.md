@@ -52,6 +52,7 @@ yarn dev
 If you don't want to register but you want to see the app in its full glory, use this data:
 
 Email: test@test.com
+
 Password: Test!2345
 
 ## Live 📍
