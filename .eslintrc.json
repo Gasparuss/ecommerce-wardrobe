@@ -52,7 +52,8 @@
     "react/no-unescaped-entities": 0,
     "no-redeclare": 0,
     "no-useless-escape": 0,
-    "no-useless-catch": 0
+    "no-useless-catch": 0,
+    "testing-library/no-unnecessary-act": 0
   },
   "parserOptions": {
     "ecmaVersion": 12,
