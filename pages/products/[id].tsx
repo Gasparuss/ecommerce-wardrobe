@@ -30,6 +30,9 @@ export const getStaticProps: GetStaticProps = async (context) => {
     return { props: { product } };
   } catch {
     return {
+      headers: {
+        authorization: `Bearer ${process.env.NEXT_PUBLIC_DATOCMS_API_TOKEN}`,
+      },
       notFound: true as const,
     };
   }
@@ -42,6 +45,9 @@ export const getStaticPaths: GetStaticPaths = async () => {
       paths: results.map(({ id }) => ({
         params: { id },
       })),
+      headers: {
+        authorization: `Bearer ${process.env.NEXT_PUBLIC_DATOCMS_API_TOKEN}`,
+      },
       fallback: "blocking" as const,
     };
   } catch (err) {
