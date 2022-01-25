@@ -48,6 +48,8 @@ yarn
 yarn dev
 ```
 
+## Live 📍
+https://ecommerce-wardrobe.vercel.app
 
 ## Credentials 💳
 If you don't want to register but you want to see the app in its full glory, use this data:
