@@ -1,12 +1,8 @@
 import firebase from "firebase/app";
 import "firebase/auth";
-const path = require("path");
-require("dotenv").config({
-  path: path.resolve(__dirname, "../../.env"),
-});
 
 const firebaseConfig = {
-  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+  apiKey: "AIzaSyDRnJCKnn5Dk4p235rAsppScV_P-4AH9N4",
   authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
   projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
   storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
