@@ -48,7 +48,8 @@ yarn
 yarn dev
 ```
 
-Credentials 💳
+
+## Credentials 💳
 If you don't want to register but you want to see the app in its full glory, use this data:
 
 Email: test@test.com
