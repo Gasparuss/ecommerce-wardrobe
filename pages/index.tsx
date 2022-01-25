@@ -20,19 +20,6 @@ const Home = ({ results }: { results: Wardrobe[] }) => {
 export default Home;
 
 export const getStaticProps: GetStaticProps = async () => {
-  // const endpoint = "https://graphql.datocms.com/";
-  // const graphQLClient = new GraphQLClient(endpoint, {
-  //   headers: {
-  //     "content-type": "application/json",
-  //     authorization: "Bearer " + process.env.NEXT_PUBLIC_DATOCMS_API_TOKEN,
-  //   },
-  // });
-  // const data = await graphQLClient.request(query);
-  // console.log(data);
-  // return {
-  //   props: { results: data },
-  // };
-
   try {
     const data = await DatoCMSData.items.all();
 
