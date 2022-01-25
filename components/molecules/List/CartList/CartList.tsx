@@ -36,7 +36,7 @@ export const CartList = memo<CartListProps>(({ cartItems }) => {
           <StyledEmptyCart>Cart is empty</StyledEmptyCart>
         )}
       </StyledCartList>
-      <Link href="/checkout">
+      <Link href="/checkout" passHref>
         <StyledButton>Checkout</StyledButton>
       </Link>
     </StyledCartListWrapper>

@@ -78,7 +78,7 @@ export const LoginForm = () => {
       </StyledForm>
       <StyledFormSignature>
         Haven't got an account?{" "}
-        <Link href="/register">
+        <Link href="/register" passHref>
           <StyledLink>Sign up</StyledLink>
         </Link>
       </StyledFormSignature>

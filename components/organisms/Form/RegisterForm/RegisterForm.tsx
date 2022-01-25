@@ -73,7 +73,7 @@ export const RegisterForm = () => {
       </StyledForm>
       <StyledFormSignature>
         Already have an account?{" "}
-        <Link href="/login">
+        <Link href="/login" passHref>
           <StyledLink>Sign in</StyledLink>
         </Link>
       </StyledFormSignature>

@@ -32,7 +32,7 @@ export const CheckoutProduct = memo<CheckoutProductProps>(
             height="100"
           />
         </StyledItemImage>
-        <Link href={`/products/${product.id}`}>
+        <Link href={`/products/${product.id}`} passHref>
           <StyledItemName>
             <h3>{product.name}</h3>
           </StyledItemName>
