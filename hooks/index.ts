@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { auth } from "lib/firebase";
-import firebase from "firebase/compat/app";
+import firebase from "firebase/app";
 
 type Dimensions = { width?: number; height?: number };
 
