@@ -14,7 +14,7 @@ test("when cartItems is not empty list of items should be displayed", () => {
       name: "wardrobe",
       description: "wardrobe",
       cost: 300,
-      wardrobetype: "2-seat",
+      wardrobetype: "freestanding",
       imgurl: "/wardrobe.jpg",
       quantity: 1,
     },
@@ -23,7 +23,16 @@ test("when cartItems is not empty list of items should be displayed", () => {
       name: "wardrobe",
       description: "wardrobe",
       cost: 300,
-      wardrobetype: "2-seat",
+      wardrobetype: "freestanding",
+      imgurl: "/wardrobe.jpg",
+      quantity: 2,
+    },
+    {
+      id: "3",
+      name: "wardrobe",
+      description: "wardrobe",
+      cost: 300,
+      wardrobetype: "freestanding",
       imgurl: "/wardrobe.jpg",
       quantity: 2,
     },
@@ -31,5 +40,5 @@ test("when cartItems is not empty list of items should be displayed", () => {
 
   render(<CheckoutList cartItems={fakeCartItems} />);
   expect(screen.queryByText(/cart is empty/i)).not.toBeInTheDocument();
-  expect(screen.getAllByTestId("checkout-product")).toHaveLength(2);
+  expect(screen.getAllByTestId("checkout-product")).toHaveLength(3);
 });
