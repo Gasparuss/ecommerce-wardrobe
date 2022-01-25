@@ -4,7 +4,6 @@ import { Layout } from "../components/organisms/Layout/Layout";
 import { Main } from "../components/organisms/Main/Main";
 import { DatoCMSData } from "../lib/datocms";
 import type { Wardrobe } from "../types";
-import { gql, GraphQLClient } from "graphql-request";
 
 const Home = ({ results }: { results: Wardrobe[] }) => {
   console.log(results);
