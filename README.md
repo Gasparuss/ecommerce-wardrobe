@@ -47,3 +47,9 @@ git clone https://github.com/Gasparuss/ecommerce-wardrobe
 yarn
 yarn dev
 ```
+
+Credentials 💳
+If you don't want to register but you want to see the app in its full glory, use this data:
+
+Email: test@test.com
+Password: Test!2345
