@@ -2,8 +2,7 @@ import { Hero } from "../Hero/Hero";
 import { CheckoutList } from "../../molecules/List/CheckoutList/CheckoutList";
 import { useCart } from "../../../context/CartContext";
 import { useWindowSize } from "../../../hooks";
-import { Header } from "next/dist/lib/load-custom-routes";
-import { StyledCheckoutList } from "../../molecules/List/CheckoutList/CheckoutList.styles";
+import { Header } from "../../molecules/Header/Header";
 import { StyledCheckoutViewWrapper } from "./CheckoutView.styles";
 
 export const CheckoutView = () => {

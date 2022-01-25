@@ -33,7 +33,7 @@ type ContextType = {
 export const useMainContext = () => {
   const context = useContext(MainContext);
   if (!context) {
-    throw new Error("Error while reading context!");
+    throw new Error("Error while reading main context!");
   }
 
   return context;

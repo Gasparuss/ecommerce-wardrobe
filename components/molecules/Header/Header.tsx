@@ -9,7 +9,7 @@ import { StyledButton } from "../../atoms/Button/Button.styles";
 import { useRouter } from "next/router";
 import { auth } from "../../../lib/firebase";
 
-const Header = () => {
+export const Header = () => {
   const router = useRouter();
   const handleLogout = () => {
     auth.signOut();
@@ -27,5 +27,3 @@ const Header = () => {
     </StyledHeader>
   );
 };
-
-export default Header;

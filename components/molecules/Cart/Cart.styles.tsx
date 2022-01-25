@@ -14,10 +14,10 @@ export const StyledCartButton = styled.button`
 
 export const StyledCartProductsCount = styled.span`
   position: absolute;
-  top: 28%;
+  top: 30%;
   left: 55%;
   transform: translate(-50%, -30%);
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 
   @media all and (min-width: 1000px) {
     font-size: 1.2rem;

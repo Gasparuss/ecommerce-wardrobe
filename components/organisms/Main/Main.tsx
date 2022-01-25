@@ -1,7 +1,7 @@
 import { memo, useEffect } from "react";
 import { useProduct } from "../../../context/ProductContext";
 import { Wardrobe } from "../../../types";
-import Header from "../../molecules/Header/Header";
+import { Header } from "../../molecules/Header/Header";
 import { HomeBanner } from "../../molecules/HomeBanner/HomeBanner";
 import { ProductsList } from "../../molecules/List/ProductsList/ProductsList";
 import { Preferences } from "../../molecules/Preferences/Preferences";
