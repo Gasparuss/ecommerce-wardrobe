@@ -43,7 +43,7 @@ If you have any issues, please let me know in the issues section or directly to 
 ## Installation 💾
 
 ```bash
-git clone https://github.com/Gasparuss/ecommerce-wardrobe
+git clonehttps://github.com/Gasparuss/ecommerce-wardrobe.git
 yarn
 
 Fill your .env variables
