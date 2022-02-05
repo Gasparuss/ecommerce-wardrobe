@@ -1,11 +1,3 @@
 const SiteClient = require("datocms-client").SiteClient;
 
-export const DatoCMSData = new SiteClient(
-  process.env.NEXT_PUBLIC_DATOCMS_API_TOKEN,
-  {
-    headers: {
-      "content-type": "application/json",
-      authorization: `Bearer ${process.env.NEXT_PUBLIC_DATOCMS_API_TOKEN}`,
-    },
-  },
-);
+export const DatoCMSData = new SiteClient("ef9b72d8a2963753c6673c6efad971");

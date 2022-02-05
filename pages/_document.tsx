@@ -5,6 +5,9 @@ import Document, {
   NextScript,
   DocumentContext,
 } from "next/document";
+import dotenv from "dotenv-safe";
+
+dotenv.config();
 
 class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
