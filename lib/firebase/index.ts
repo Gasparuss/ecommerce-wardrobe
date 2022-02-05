@@ -3,11 +3,11 @@ import "firebase/auth";
 
 const firebaseConfig = {
   apiKey: "AIzaSyDRnJCKnn5Dk4p235rAsppScV_P-4AH9N4",
-  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
-  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
-  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
-  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
+  authDomain: "ecommerce-wardrobe-87c1f.firebaseapp.com",
+  projectId: "ecommerce-wardrobe-87c1f",
+  storageBucket: "ecommerce-wardrobe-87c1f.appspot.com",
+  messagingSenderId: "341039321729",
+  appId: "1:341039321729:web:51ac92bacea45b89d07380",
 };
 
 if (!firebase.apps.length) {
