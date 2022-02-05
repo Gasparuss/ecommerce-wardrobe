@@ -8,11 +8,7 @@
     "lint": "next lint",
     "prepare": "husky install",
     "pre-commit": "lint-staged",
-    "test": "jest --watchAll",
-    "cy:open-only": "cypress open",
-    "cy:run-only": "cypress run",
-    "cy:open": "start-server-and-test dev 3000 cy:open-only",
-    "cy:run": "start-server-and-test dev 3000 cy:run-only"
+    "test": "jest --watchAll"
   },
   "dependencies": {
     "datocms-client": "^3.5.14",
