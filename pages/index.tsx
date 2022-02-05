@@ -6,8 +6,6 @@ import { DatoCMSData } from "../lib/datocms";
 import type { Wardrobe } from "../types";
 
 const Home = ({ results }: { results: Wardrobe[] }) => {
-  console.log(results);
-
   return (
     <AuthChecker>
       <Layout>

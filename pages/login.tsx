@@ -1,4 +1,3 @@
-import { Hero } from "../components/organisms/Hero/Hero";
 import { LoginForm } from "../components/organisms/Form/LoginForm/LoginForm";
 import styled from "styled-components";
 import { Layout } from "../components/organisms/Layout/Layout";
@@ -18,7 +17,6 @@ const Login = () => {
   return (
     <Layout title="Login">
       <MainWrapper>
-        <Hero />
         <LoginForm />
       </MainWrapper>
     </Layout>

@@ -1,4 +1,3 @@
-import { Hero } from "../components/organisms/Hero/Hero";
 import { RegisterForm } from "../components/organisms/Form/RegisterForm/RegisterForm";
 import styled from "styled-components";
 import { Layout } from "../components/organisms/Layout/Layout";
@@ -18,7 +17,6 @@ const Register = () => {
   return (
     <Layout title="Register">
       <MainWrapper>
-        <Hero />
         <RegisterForm />
       </MainWrapper>
     </Layout>

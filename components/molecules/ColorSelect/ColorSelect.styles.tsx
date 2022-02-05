@@ -19,7 +19,6 @@ export const StyledInputLabel = styled.label<{ isActive: boolean }>`
   text-align: center;
   border-width: 5px;
   border-color: var(--gray-100);
-  border-style: ${(props) => (props.isActive ? "solid" : "dashed")};
   margin: 0.5rem;
 
   &:focus-within {

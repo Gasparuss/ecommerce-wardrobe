@@ -29,7 +29,6 @@ export const ColorSelect = memo<ColorSelectProps>(({ name, onChange }) => {
             key={color.label}
             isActive={activeWardrobeColor === color.label}
           >
-            <span className="sr-only">{color.label}</span>
             <StyledInput
               type="checkbox"
               value={color.label}
