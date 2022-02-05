@@ -7,7 +7,9 @@ import Document, {
 } from "next/document";
 import dotenv from "dotenv-safe";
 
-dotenv.config();
+dotenv.config({
+  allowEmptyValues: true,
+});
 
 class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
