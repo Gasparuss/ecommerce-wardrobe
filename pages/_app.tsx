@@ -1,6 +1,5 @@
 import "../styles/global.scss";
 import "../styles/variables.scss";
-import "dotenv-safe/config";
 import { DefaultSeo } from "next-seo";
 import type { AppProps } from "next/app";
 import { MainProvider } from "../context/MainContext";
