@@ -21,7 +21,7 @@ This app is a project for e-commerce store. App includes authentication and logg
 ## Screenshots 📺
 
 <p align="center">
-	<img src="https://i.ibb.co/QfC8g2f/firstpage.png" />
+	<img src="https://i.ibb.co/D7y7vJx/loginpage.png" />
 </p>
 
 <p aling="center">
@@ -33,7 +33,7 @@ This app is a project for e-commerce store. App includes authentication and logg
 </p>
 
 <p aling="center">
-	<img width="100%" src="https://i.ibb.co/tJNWPQ2/fourthpage.png" />
+	<img width="100%" src="https://i.ibb.co/4wbkqKK/productview.png" />
 </p>
 
 ## Code Example/Issues 🔍
